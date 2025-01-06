@@ -1,0 +1,13 @@
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\bin\Debug\net9.0\Domain.deps.json
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\bin\Debug\net9.0\Domain.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\bin\Debug\net9.0\Domain.pdb
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.sourcelink.json
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\refint\Domain.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\Domain.pdb
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Domain\obj\Debug\net9.0\ref\Domain.dll

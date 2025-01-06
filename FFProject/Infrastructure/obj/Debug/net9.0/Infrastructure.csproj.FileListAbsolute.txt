@@ -1,0 +1,16 @@
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\bin\Debug\net9.0\Infrastructure.deps.json
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\bin\Debug\net9.0\Infrastructure.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\bin\Debug\net9.0\Infrastructure.pdb
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\bin\Debug\net9.0\Domain.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\bin\Debug\net9.0\Domain.pdb
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfo.cs
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
+C:\Users\sahir\Desktop\Projects\FFProject\FFProject\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
