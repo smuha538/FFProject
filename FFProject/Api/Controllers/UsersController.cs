@@ -1,15 +1,27 @@
-﻿using Api.Requests;
-using Api.Resources;
+﻿using Api.Resources;
+using Application.Queries.Users;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
-[Route("api/users")]
 [ApiController]
-public class UsersController: ControllerBase
+[Route("api/users")]
+public class UsersController(ISender sender) : ControllerBase
 {
-    /*public Task<UsersResource> GetUser([FromQuery] UsersRequest request)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<UserResource>> GetUserById(int id)
     {
-        
-    };*/
+        var query = new GetUserQuery(id);
+        var userModel = await sender.Send(query);
+
+        var userResource = new UserResource
+        {
+            Id = userModel.Id,
+            Username = userModel.Username,
+            Email = userModel.Email
+        };
+
+        return Ok(userResource);
+    }
 }

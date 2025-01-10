@@ -1,19 +1,19 @@
-using Supabase;
+using Application.Handlers.QueryHandlers.Users;
+using Infrastructure.Mappers;
+using Infrastructure.Repositories;
+using Infrastructure.Repositories.Interfaces;
+using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddControllers();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetUserQueryHandler).Assembly));
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<Supabase.Client>(_ =>
-    new Supabase.Client(
-        builder.Configuration["url"],
-        builder.Configuration["key"],
-        new SupabaseOptions
-        {
-            AutoRefreshToken = true,
-            AutoConnectRealtime = true
-        }));
+builder.Services.AddSingleton<SupabaseClientService>();
+builder.Services.AddScoped<UserEntityMapper>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
@@ -22,5 +22,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.UseRouting();
+app.MapControllers();
 
 app.Run();
