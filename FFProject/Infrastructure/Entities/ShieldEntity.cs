@@ -20,7 +20,7 @@ public class ShieldEntity: BaseModel
     /// Name of the shield
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Jobs that can use the shield
@@ -32,17 +32,17 @@ public class ShieldEntity: BaseModel
     /// Defense stat of the shield
     /// </summary>
     [Column("def")]
-    public int Defense { get; set; }
+    public int? Defense { get; set; }
     
     /// <summary>
     /// Evasion stat of the shield
     /// </summary>
     [Column("eva")]
-    public int Evasion { get; set; }
+    public int? Evasion { get; set; }
     
     /// <summary>
     /// Sprite path of the shield
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

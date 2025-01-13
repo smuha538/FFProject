@@ -21,6 +21,7 @@ public class UserRepository(SupabaseClientService supabaseClientService, UserEnt
         {
             throw new Exception($"User {userId} not found");
         }
+        
         return mapper.Map(response);
     }
 }

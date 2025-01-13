@@ -20,12 +20,12 @@ public class Weapon
     /// <summary>
     /// Type of the weapon
     /// </summary>
-    public required string Type { get; set; }
+    public required WeaponTypes Type { get; set; }
     
     /// <summary>
     /// Attack damage of the weapon
     /// </summary>
-    public int Attack { get; set; }
+    public int? Attack { get; set; }
     
     /// <summary>
     /// Effect of the weapon
@@ -40,12 +40,12 @@ public class Weapon
     /// <summary>
     /// Accuracy of the weapon
     /// </summary>
-    public int Accuracy { get; set; }
+    public int? Accuracy { get; set; }
     
     /// <summary>
     /// Critical damage of the weapon
     /// </summary>
-    public int Critical { get; set; }
+    public int? Critical { get; set; }
     
     /// <summary>
     /// Sprite path of the weapon

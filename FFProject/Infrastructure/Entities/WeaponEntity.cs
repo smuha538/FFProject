@@ -1,5 +1,6 @@
 ﻿using Domain.Enums;
 using Supabase.Postgrest.Attributes;
+using Supabase.Postgrest.Models;
 
 namespace Infrastructure.Entities;
 
@@ -7,7 +8,7 @@ namespace Infrastructure.Entities;
 /// Supabase weapon entity
 /// </summary>
 [Table("Weapons")]
-public class WeaponEntity
+public class WeaponEntity: BaseModel
 {
     /// <summary>
     /// ID of the weapon
@@ -19,25 +20,25 @@ public class WeaponEntity
     /// Name of the weapon
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Type of the weapon
     /// </summary>
     [Column("type")]
-    public required string Type { get; set; }
+    public WeaponTypes Type { get; set; } 
     
     /// <summary>
     /// Attack damage of the weapon
     /// </summary>
     [Column("atk")]
-    public int Attack { get; set; }
+    public int? Attack { get; set; }
     
     /// <summary>
     /// Effect of the weapon
     /// </summary>
     [Column("effect")]
-    public string Effect { get; set; }
+    public string Effect { get; set; } = string.Empty;
     
     /// <summary>
     /// Jobs that can use the weapon
@@ -49,17 +50,17 @@ public class WeaponEntity
     /// Accuracy of the weapon
     /// </summary>
     [Column("acc")]
-    public int Accuracy { get; set; }
+    public int? Accuracy { get; set; }
     
     /// <summary>
     /// Critical damage of the weapon
     /// </summary>
     [Column("crit")]
-    public int Critical { get; set; }
+    public int? Critical { get; set; }
     
     /// <summary>
     /// Sprite path of the weapon
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

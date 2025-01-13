@@ -1,4 +1,5 @@
 using Application.Handlers.QueryHandlers.Users;
+using Application.Mappers.ModelMappers;
 using Infrastructure.Mappers;
 using Infrastructure.Repositories;
 using Infrastructure.Repositories.Interfaces;
@@ -13,7 +14,17 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetUs
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<SupabaseClientService>();
 builder.Services.AddScoped<UserEntityMapper>();
+builder.Services.AddScoped<UserModelMapper>();
+builder.Services.AddScoped<WeaponEntityMapper>();
+builder.Services.AddScoped<WeaponModelMapper>();
+builder.Services.AddScoped<GilsEntityMapper>();
+builder.Services.AddScoped<GilsModelMapper>();
+builder.Services.AddScoped<ShieldEntityMapper>();
+builder.Services.AddScoped<ShieldModelMapper>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IWeaponRepository, WeaponRepository>();
+builder.Services.AddScoped<IGilsRepository, GilsRepository>();
+builder.Services.AddScoped<IShieldRepository, ShieldRepository>();
 
 var app = builder.Build();
 

@@ -5,10 +5,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
+/// <summary>
+/// Users controller
+/// </summary>
+/// <param name="sender"></param>
 [ApiController]
 [Route("api/users")]
 public class UsersController(ISender sender) : ControllerBase
 {
+    /// <summary>
+    /// Gets user by ID
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet("{id}")]
     public async Task<ActionResult<UserResource>> GetUserById(int id)
     {

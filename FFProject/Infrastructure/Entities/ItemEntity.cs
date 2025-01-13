@@ -26,7 +26,7 @@ public class ItemEntity: BaseModel
     /// Type of item
     /// </summary>
     [Column("type")]
-    public Types Type { get; set; }
+    public ItemTypes ItemType { get; set; }
     
     /// <summary>
     /// Price of the item

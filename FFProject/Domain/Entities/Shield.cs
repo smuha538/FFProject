@@ -25,15 +25,15 @@ public class Shield
     /// <summary>
     /// Defense stat of the shield
     /// </summary>
-    public int Defense { get; set; }
+    public int? Defense { get; set; }
     
     /// <summary>
     /// Evasion stat of the shield
     /// </summary>
-    public int Evasion { get; set; }
+    public int? Evasion { get; set; }
     
     /// <summary>
     /// Sprite path of the shield
     /// </summary>
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

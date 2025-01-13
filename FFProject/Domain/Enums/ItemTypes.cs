@@ -1,6 +1,6 @@
 ﻿namespace Domain.Enums;
 
-public enum Types
+public enum ItemTypes
 {
     Hp = 0,
     Mp = 1,
