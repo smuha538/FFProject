@@ -20,7 +20,7 @@ public class ItemEntity: BaseModel
     /// Name of the item
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Type of item
@@ -38,11 +38,11 @@ public class ItemEntity: BaseModel
     /// Amount the item restores
     /// </summary>
     [Column("restore_amount")]
-    public int RestoreAmount { get; set; }
+    public int? RestoreAmount { get; set; }
     
     /// <summary>
     /// Sprite path of the item
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

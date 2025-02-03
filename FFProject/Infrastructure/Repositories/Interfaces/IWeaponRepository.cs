@@ -11,5 +11,5 @@ public interface IWeaponRepository
     /// Gets all weapons
     /// </summary>
     /// <returns></returns>
-    Task<List<Weapon>> GetWeaponsAsync();
+    Task<IEnumerable<Weapon>> GetWeaponsAsync();
 }

@@ -14,11 +14,11 @@ public class Track
     /// Track title
     /// </summary>
     public required string Title { get; set; }
-    
+
     /// <summary>
     /// Artist of track
     /// </summary>
-    public string Artist { get; set; }
+    public string Artist { get; set; } = string.Empty;
     
     /// <summary>
     /// File path of the track

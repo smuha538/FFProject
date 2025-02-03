@@ -11,5 +11,5 @@ public interface IShieldRepository
     /// Gets all shields
     /// </summary>
     /// <returns></returns>
-    Task<List<Shield>> GetShieldsAsync();
+    Task<IEnumerable<Shield>> GetShieldsAsync();
 }

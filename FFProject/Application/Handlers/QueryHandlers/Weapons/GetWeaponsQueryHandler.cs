@@ -11,12 +11,12 @@ namespace Application.Handlers.QueryHandlers.Weapons;
 /// </summary>
 /// <param name="weaponRepository"></param>
 /// <param name="mapper"></param>
-public class GetWeaponsQueryHandler(IWeaponRepository weaponRepository, WeaponModelMapper mapper): IRequestHandler<GetWeaponsQuery, List<WeaponModel>>
+public class GetWeaponsQueryHandler(IWeaponRepository weaponRepository, WeaponModelMapper mapper): IRequestHandler<GetWeaponsQuery, IEnumerable<WeaponModel>>
 {
-    public async Task<List<WeaponModel>> Handle(GetWeaponsQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<WeaponModel>> Handle(GetWeaponsQuery request, CancellationToken cancellationToken)
     {
         var weapons = await weaponRepository.GetWeaponsAsync();
 
-        return weapons.Select(mapper.Map).ToList();
+        return weapons.Select(mapper.Map);
     }
 }

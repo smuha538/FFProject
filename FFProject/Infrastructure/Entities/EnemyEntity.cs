@@ -19,7 +19,7 @@ public class EnemyEntity: BaseModel
     /// Name of the enemy
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Hp of the enemy
@@ -61,5 +61,5 @@ public class EnemyEntity: BaseModel
     /// Sprite path of the item
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

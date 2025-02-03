@@ -3,4 +3,7 @@ using MediatR;
 
 namespace Application.Queries.Shields;
 
-public record GetShieldsQuery : IRequest<List<ShieldModel>>;
+/// <summary>
+/// Gets all shields
+/// </summary>
+public record GetShieldsQuery : IRequest<IEnumerable<ShieldModel>>;

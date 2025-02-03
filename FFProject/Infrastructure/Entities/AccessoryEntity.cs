@@ -20,23 +20,23 @@ public class AccessoryEntity: BaseModel
     /// Name of the Accessory
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Defense stat of the Accessory
     /// </summary>
     [Column("def")]
-    public int Defense { get; set; }
+    public int? Defense { get; set; }
     
     /// <summary>
     /// Evasion stat of the Accessory
     /// </summary>
     [Column("eva")]
-    public int Evasion { get; set; }
+    public int? Evasion { get; set; }
     
     /// <summary>
     /// Path of the sprite
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

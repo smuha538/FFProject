@@ -15,7 +15,7 @@ public class UserModelMapper
             Id = user.Id,
             Username = user.Username,
             Email = user.Email,
-            Password = user.Password
+            Password = user.Password,
         };
     }
 }

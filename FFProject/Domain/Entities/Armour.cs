@@ -25,12 +25,12 @@ public class Armour
     /// <summary>
     /// Defense stat of the armour
     /// </summary>
-    public int Defense { get; set; }
+    public int? Defense { get; set; }
     
     /// <summary>
     /// Evasion stat of the armour
     /// </summary>
-    public int Evasion { get; set; }
+    public int? Evasion { get; set; }
     
     /// <summary>
     /// Path of the sprite

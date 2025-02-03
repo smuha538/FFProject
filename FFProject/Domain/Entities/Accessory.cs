@@ -18,12 +18,12 @@ public class Accessory
     /// <summary>
     /// Defense stat of the Accessory
     /// </summary>
-    public int Defense { get; set; }
+    public int? Defense { get; set; }
     
     /// <summary>
     /// Evasion stat of the Accessory
     /// </summary>
-    public int Evasion { get; set; }
+    public int? Evasion { get; set; }
     
     /// <summary>
     /// Path of the sprite

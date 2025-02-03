@@ -3,4 +3,7 @@ using MediatR;
 
 namespace Application.Queries.Weapons;
 
-public record GetWeaponsQuery : IRequest<List<WeaponModel>>;
+/// <summary>
+/// Gets all weapons
+/// </summary>
+public record GetWeaponsQuery : IRequest<IEnumerable<WeaponModel>>;

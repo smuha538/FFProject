@@ -10,12 +10,12 @@ namespace Infrastructure.Repositories;
 public class WeaponRepository (SupabaseClientService supabaseClientService, WeaponEntityMapper mapper) : IWeaponRepository
 {
     /// <inheritdoc cref="IWeaponRepository"/>
-    public async Task<List<Weapon>> GetWeaponsAsync()
+    public async Task<IEnumerable<Weapon>> GetWeaponsAsync()
     {
         var response = await supabaseClientService.Client
             .From<WeaponEntity>()
             .Get();
         
-        return response.Models.Select(mapper.Map).ToList();
+        return response.Models.Select(mapper.Map);
     }
 }

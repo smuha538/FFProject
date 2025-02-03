@@ -2,6 +2,9 @@
 
 namespace Domain.Entities;
 
+/// <summary>
+/// Item entity
+/// </summary>
 public class Item
 {
     /// <summary>
@@ -27,7 +30,7 @@ public class Item
     /// <summary>
     /// Amount the item restores
     /// </summary>
-    public int RestoreAmount { get; set; }
+    public int? RestoreAmount { get; set; }
     
     /// <summary>
     /// Sprite path of the item

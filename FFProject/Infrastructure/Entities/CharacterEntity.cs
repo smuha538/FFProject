@@ -26,7 +26,7 @@ public class CharacterEntity: BaseModel
     /// Name of the Character
     /// </summary>
     [Column("name")]
-    public required string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     /// <summary>
     /// Defense stat of the Character

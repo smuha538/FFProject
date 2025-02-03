@@ -26,7 +26,7 @@ public class CharacterSpriteEntity: BaseModel
     /// Name of the sprite
     /// </summary>
     [Column("sprite_name")]
-    public required string SpriteName { get; set; }
+    public string SpriteName { get; set; } = string.Empty;
     
     /// <summary>
     /// Type of the sprite
@@ -38,5 +38,5 @@ public class CharacterSpriteEntity: BaseModel
     /// Path of the sprite
     /// </summary>
     [Column("sprite_path")]
-    public required string SpritePath { get; set; }
+    public string SpritePath { get; set; } = string.Empty;
 }

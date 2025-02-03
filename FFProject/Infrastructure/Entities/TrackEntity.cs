@@ -19,17 +19,17 @@ public class TrackEntity: BaseModel
     /// Track title
     /// </summary>
     [Column("title")]
-    public required string Title { get; set; }
-    
+    public string Title { get; set; } = string.Empty;
+
     /// <summary>
     /// Artist of track
     /// </summary>
     [Column("artist")]
-    public string Artist { get; set; }
-    
+    public string Artist { get; set; } = string.Empty;
+
     /// <summary>
     /// File path of the track
     /// </summary>
     [Column("file_path")]
-    public required string FilePath { get; set; }
+    public string FilePath { get; set; } = string.Empty;
 }

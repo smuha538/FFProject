@@ -11,12 +11,12 @@ namespace Application.Handlers.QueryHandlers.Shields;
 /// </summary>
 /// <param name="shieldRepository"></param>
 /// <param name="mapper"></param>
-public class GetShieldsQueryHandler(IShieldRepository shieldRepository, ShieldModelMapper mapper): IRequestHandler<GetShieldsQuery, List<ShieldModel>>
+public class GetShieldsQueryHandler(IShieldRepository shieldRepository, ShieldModelMapper mapper): IRequestHandler<GetShieldsQuery, IEnumerable<ShieldModel>>
 {
-    public async Task<List<ShieldModel>> Handle(GetShieldsQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<ShieldModel>> Handle(GetShieldsQuery request, CancellationToken cancellationToken)
     {
         var shields = await shieldRepository.GetShieldsAsync();
 
-        return shields.Select(mapper.Map).ToList();
+        return shields.Select(mapper.Map);
     }
 }
